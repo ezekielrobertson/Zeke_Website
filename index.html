@@ -3,202 +3,224 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/png" href="favicon_image.png">
-    <title>Zeke's Website</title>
+    <link rel="icon" type="image/png" href="images/favicon_image.png">
     <meta name="Description" content="Free HTML Tutorial for Beginners">
     <meta name="keywords" content="HTML, tutorial, beginners">
     <meta name="author" content="Zeke Robertson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <!--<meta http-equiv="refresh" content="30"> is how you implement how often the website will refresh -->
+    <title>Zeke's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--for other fonts, go to "Google Fonts"-->
 </head>
 
 <body style="background-color: lightblue;">
-    <button onclick="doSomething()" style="background-color: black; color: white;border-radius: 5px;width: 100px;height: 50px;" >
-        <!--to make this button a hyperlink, surround it in <a></a> and insert whatever link you would like-->
-        click me
-    </button>
-    <p id="test">Hello</p>
-    <script>
-        function doSomething(){document.getElementById("test").innerHTML = "Goodbye";}
-    </script>
-    <br>
-    <!--ifrom= embed content from another souce into an HTML document-->
-    <iframe style="border:0" src="sample_ad.html" width="750" height="100"></iframe>
-    <!-- This is a comment  -->
-    <h1>This is my website</h1>
-    <hr>
-    <h1 style="color: red;">I like pizza</h1>
-    <br>
-    <h2 style="color: rgb(5,240,232);">I like pizza</h2>
-    <br>
-    <h3>I like pizza</h3>
-    <br>
-    <div style="background-color: #444444;">
-    <p>This is some sample text</p>
-    <p style="background-color: brown; color: green"><span style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Necessitatibus fugiat dolores enim laudantium, quis cumque itaque, consequatur voluptatibus accusamus vel repudiandae ipsam soluta repellendus unde atque nulla. Sequi, odit voluptates.</p>
-    <br>
-    <p>This is how you make a hyperlink</p>
-    <br>
-    </div>
-    <a href="https://www.google.com" target=_blank title="This takes you to google">
-        Google
-    </a> 
-    <br>
-    <a href="https://www.youtube.com" target=_blank title="This will take you to youtube">
-        Youtube
-    </a>
-    <br>
-    <br>
-    <form action="action_page.php" method="POST">
-        <div>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
-        </div>  
+    <header style="background-color: mediumaquamarine;">
+        <h1>Welcome to Zeke's Portfolio</h1>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Products</a>
+        <a href="">Contact Us</a>
+        <hr>
+    </header>
+    
+    <main>
+        <h4>Practice with HTML</h4>
+        <button onclick="doSomething()" style="background-color: black; color: white;border-radius: 5px;width: 100px;height: 50px;" >
+            <!--to make this button a hyperlink, surround it in <a></a> and insert whatever link you would like-->
+            click me
+        </button>
+        <p id="test">Hello</p>
+        <script>
+            function doSomething(){document.getElementById("test").innerHTML = "Goodbye";}
+        </script>
         <br>
-        <div>   
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        <!--ifrom= embed content from another souce into an HTML document-->
+        <iframe style="border:0" src="sample_ad.html" width="750" height="100"></iframe>
+        <!-- This is a comment  -->
+        <h1 id="header1">This is my website</h1>
+        <hr>
+        <h1 style="color: red;">I like pizza</h1>
+        <br>
+        <h2>I like pizza</h2>
+        <br>
+        <h3>I like pizza</h3>
+        <br>
+        <div style="background-color: #444444;">
+        <p>This is some sample text</p>
+        <p><span style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Necessitatibus fugiat dolores enim laudantium, quis cumque itaque, consequatur voluptatibus accusamus vel repudiandae ipsam soluta repellendus unde atque nulla. Sequi, odit voluptates.</p>
+        <br>
+        <p>This is how you make a hyperlink</p>
+        <br>
         </div>
+        <a href="https://www.google.com" target=_blank title="This takes you to google">
+            Google
+        </a> 
         <br>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="spants@gmail.com" required>
-        </div>
+        <a href="https://www.youtube.com" target=_blank title="This will take you to youtube">
+            Youtube
+        </a>
         <br>
-        <div>
-            <label for="pass">Password:</label>
-            <input type="password" id="pass" name="pass" maxlength="12" required>
-        </div>
         <br>
-        <div>
-            <label for="phone">Phone #:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required>
-        </div>
-        <br>
-        <div>
-            <label for="bdate">Birthdate:</label>
-            <input type="date" id="bdate" name="bdate">
-        </div>
-        <br>
-        <div>
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
-        </div>
-        <br>
-        <div>
-            <label for="title">Title:</label>
+        <form action="action_page.php" method="POST">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+            </div>  
+            <br>
+            <div>   
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="spants@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required>
+            </div>
+            <br>
+            <div>
+                <label for="bdate">Birthdate:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+            <br>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+            </div>
+            <br>
+            <div>
+                <label for="title">Title:</label>
 
-            <label for="Mr.">Mr.</label>
-            <input type="radio" id="Mr." name="title">
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title">
 
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" id="Mrs." name="title">
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title">
 
-            <label for="PhD.">PhD.</label>
-            <input type="radio" id="PhD." name="title">
-        </div>
+                <label for="PhD.">PhD.</label>
+                <input type="radio" id="PhD." name="title">
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment Type:</label>
+                <select id="payment" name="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">Gift Card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="subscribe">Subscribe:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <!-- can also make the image a hyperlink by wrapping it in <a></a> brackets-->
         <br>
-        <div>
-            <label for="payment">Payment Type:</label>
-            <select id="payment" name="payment">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="giftcard">Gift Card</option>
-                <option value="paypal">Paypal</option>
-            </select>
-        </div>
+        <img src="images/IMG_7191.JPG" height="300" alt="This is a picture of my dog, Zenith" title="Zenith">
+        <!--This is how to put audio into the webpage, just insert the mp3 link into the src quotes-->
+        <audio controls autoplay muted loop src="">
+            <source src="">
+        </audio>
         <br>
-        <div>
-            <label for="subscribe">Subscribe:</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
-        </div>
+        <video controls autoplay muted loop src="" width="500">
+            <source src="">
+            <!--can also create another souce for a different video file type-->
+        </video>
         <br>
-        <div>
-            <input type="reset">
-        </div>
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <ins>inserted</ins> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <mark>marked</mark> text</p>
         <br>
-        <div>
-            <input type="submit">
-        </div>
-    </form>
-    <!-- can also make the image a hyperlink by wrapping it in <a></a> brackets-->
-    <img src="IMG_7191.JPG" height="300" alt="This is a picture of my dog, Zenith" title="Zenith">
-    <!--This is how to put audio into the webpage, just insert the mp3 link into the src quotes-->
-    <audio controls autoplay muted loop src="">
-        <source src="">
-    </audio>
-    <br>
-    <video controls autoplay muted loop src="" width="500">
-        <source src="">
-        <!--can also create another souce for a different video file type-->
-    </video>
-    <br>
-    <p>This is normal text</p>
-    <p>This is <b>bold</b> text</p>
-    <p>This is <i>italic</i> text</p>
-    <p>This is <big>big</big> text</p>
-    <p>This is <small>small</small> text</p>
-    <p>This is <sub>subscript</sub> text</p>
-    <p>This is <sup>superscript</sup> text</p>
-    <p>This is <ins>inserted</ins> text</p>
-    <p>This is <del>deleted</del> text</p>
-    <p>This is <mark>marked</mark> text</p>
-    <br>
-    <h4>Unoderder List</h4>
-    <ul>
-        <li>pizza dough</li>
-        <li>tomato sauce</li>
-        <li>cheese</li>
-        <li>toppings
-            <ul>
-                <li>pepperoni</li>
-                <li>mushrooms</li>
-                <li>peppers</li>
-            </ul>
-        </li>
+        <h4>Unoderder List</h4>
+        <ul>
+            <li>pizza dough</li>
+            <li>tomato sauce</li>
+            <li>cheese</li>
+            <li>toppings
+                <ul>
+                    <li>pepperoni</li>
+                    <li>mushrooms</li>
+                    <li>peppers</li>
+                </ul>
+            </li>
 
-    <br>
-    <h4>Ordered List</h4>
-    <ol>
-        <li>eat breakfast</li>
-        <li>take a shower</li>
-        <li>leave for work</li>
-    </ol>
-    <br>
-    <h4>Description List</h4>
-    <dl>
-        <dt>HTML</dt>
-        <dd>This adds structure to a webpage</dd>
-        <dt>CSS</dt>
-        <dd>This adds style to a webpage</dd>
-        <dt>JavaScript</dt>
-        <dd>This adds functionality to a webpage</dd>
-    </dl>
-    <br>
-    <h3>Ride Time Weekly</h3>
-    <!--the width for the table is the width of the header boxes times how many headers you have-->
-    <table bgcolor="black" width="700">
-        <tr bgcolor="grey">
-            <th width="100">Sunday</th>
-            <th width="100">Monday</th>
-            <th width="100">Tuesday</th>
-            <th width="100">Wednesday</th>
-            <th width="100">Thursday</th>
-            <th width="100">Friday</th>
-            <th width="100">Saturday</th>
-        </tr>
-        <tr bgcolor="green" align="center">
-            <td>180 mintues Z2</td>
-            <td>Rest day</td>
-            <td>90 minutes Z2</td>
-            <td>90 minutes with 4x5min Vo2 Max 6min RBI</td>
-            <td>90 minutes Z2</td>
-            <td>90 minutes Z2</td>
-            <td>150 minutes with 2x20min Threshold 12min RBI</td>
-        </tr>
-    </table>
-    <br>
+        <br>
+        <h4>Ordered List</h4>
+        <ol>
+            <li>eat breakfast</li>
+            <li>take a shower</li>
+            <li>leave for work</li>
+        </ol>
+        <br>
+        <h4>Description List</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>This adds structure to a webpage</dd>
+            <dt>CSS</dt>
+            <dd>This adds style to a webpage</dd>
+            <dt>JavaScript</dt>
+            <dd>This adds functionality to a webpage</dd>
+        </dl>
+        <br>
+        <h3>Ride Time Weekly</h3>
+        <!--the width for the table is the width of the header boxes times how many headers you have-->
+        <table bgcolor="black" width="700">
+            <tr bgcolor="grey">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td>180 mintues Z2</td>
+                <td>Rest day</td>
+                <td>90 minutes Z2</td>
+                <td>90 minutes with 4x5min Vo2 Max 6min RBI</td>
+                <td>90 minutes Z2</td>
+                <td>90 minutes Z2</td>
+                <td>150 minutes with 2x20min Threshold 12min RBI</td>
+            </tr>
+        </table>
+        <br>
+    </main>
+
+    <footer style="background-color: mediumaquamarine;">
+        <hr>
+        Author: Zeke Robertson<br>
+        &copy; copyright reserved<br>
+        <small><a href="mailto:ezekiel.j.robertson@gmail.com">ezekiel.j.robertson@gmail.com</a></small>
+    </footer>   
 
 
 </body>
