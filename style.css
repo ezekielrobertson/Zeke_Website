@@ -21,8 +21,32 @@ footer{
     background-color: white;
     padding: 20px;
 }
+#form1{
+    background-color: gray;
+    color: black;
+    border: 3px solid black;
+    width: 250px;
+    padding: 20px;
+
+}
+#link_box1{
+    background-color: gray;
+    width: 250px;
+    padding: 20px;
+    font-size: large;
+}
 #box1{
     width: 200px;
     height: 200px;
     background-color: orangered;
+}
+#lists{
+    background-color: gray;
+    width: 250px;
+    padding: 20px;
+}
+#table1{
+    background-color: gray;
+    width: 700px;
+    padding: 20px;
 }

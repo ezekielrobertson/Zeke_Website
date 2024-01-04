@@ -13,7 +13,7 @@
     <title>Zeke's Website</title>
     <link rel="stylesheet" href="style.css">
     <!--for other fonts, go to "Google Fonts"-->
-    
+
 </head>
 
 <body style="background-color: lightblue;">
@@ -48,23 +48,26 @@
         <br>
         <h3>I like pizza</h3>
         <br>
-        <div style="background-color: #444444;">
-        <p>This is some sample text</p>
-        <p><span style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Necessitatibus fugiat dolores enim laudantium, quis cumque itaque, consequatur voluptatibus accusamus vel repudiandae ipsam soluta repellendus unde atque nulla. Sequi, odit voluptates.</p>
-        <br>
-        <p>This is how you make a hyperlink</p>
-        <br>
+        <div style="background-color: #444444; padding: 20px;">
+            <p>This is some sample text</p>
+            <p><span style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Necessitatibus fugiat dolores enim laudantium, quis cumque itaque, consequatur voluptatibus accusamus vel repudiandae ipsam soluta repellendus unde atque nulla. Sequi, odit voluptates.</p>
+            <br>
+            <p>This is how you make a hyperlink</p>
+            <br>
         </div>
-        <a href="https://www.google.com" target=_blank title="This takes you to google">
-            Google
-        </a> 
+        <div id="link_box1">
+            <a href="https://www.google.com" target=_blank title="This takes you to google">
+                Google
+            </a> 
+            <br>
+            <br>
+            <a href="https://www.youtube.com" target=_blank title="This will take you to youtube">
+                Youtube
+            </a>
+        </div>  
         <br>
-        <a href="https://www.youtube.com" target=_blank title="This will take you to youtube">
-            Youtube
-        </a>
         <br>
-        <br>
-        <form action="action_page.php" method="POST">
+        <form action="action_page.php" method="POST" id="form1">
             <div>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
@@ -167,59 +170,63 @@
         <p>This is <del>deleted</del> text</p>
         <p>This is <mark>marked</mark> text</p>
         <br>
-        <h4>Unoderder List</h4>
-        <ul>
-            <li>pizza dough</li>
-            <li>tomato sauce</li>
-            <li>cheese</li>
-            <li>toppings
-                <ul>
-                    <li>pepperoni</li>
-                    <li>mushrooms</li>
-                    <li>peppers</li>
-                </ul>
-            </li>
-
+        <div id="lists">
+            <h4>Unordered List</h4>
+            <ul>
+                <li>pizza dough</li>
+                <li>tomato sauce</li>
+                <li>cheese</li>
+                <li>toppings
+                    <ul>
+                        <li>pepperoni</li>
+                        <li>mushrooms</li>
+                        <li>peppers</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <h4>Ordered List</h4>
+            <ol>
+                <li>eat breakfast</li>
+                <li>take a shower</li>
+                <li>leave for work</li>
+            </ol>
+            <br>
+            <h4>Description List</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>This adds structure to a webpage</dd>
+                <dt>CSS</dt>
+                <dd>This adds style to a webpage</dd>
+                <dt>JavaScript</dt>
+                <dd>This adds functionality to a webpage</dd>
+            </dl>
+        </div>
         <br>
-        <h4>Ordered List</h4>
-        <ol>
-            <li>eat breakfast</li>
-            <li>take a shower</li>
-            <li>leave for work</li>
-        </ol>
-        <br>
-        <h4>Description List</h4>
-        <dl>
-            <dt>HTML</dt>
-            <dd>This adds structure to a webpage</dd>
-            <dt>CSS</dt>
-            <dd>This adds style to a webpage</dd>
-            <dt>JavaScript</dt>
-            <dd>This adds functionality to a webpage</dd>
-        </dl>
-        <br>
-        <h3>Ride Time Weekly</h3>
+        <div id="table1">
+            <h3>Ride Time Weekly</h3>
         <!--the width for the table is the width of the header boxes times how many headers you have-->
-        <table bgcolor="black" width="700">
-            <tr bgcolor="grey">
-                <th width="100">Sunday</th>
-                <th width="100">Monday</th>
-                <th width="100">Tuesday</th>
-                <th width="100">Wednesday</th>
-                <th width="100">Thursday</th>
-                <th width="100">Friday</th>
-                <th width="100">Saturday</th>
-            </tr>
-            <tr bgcolor="green" align="center">
-                <td>180 mintues Z2</td>
-                <td>Rest day</td>
-                <td>90 minutes Z2</td>
-                <td>90 minutes with 4x5min Vo2 Max 6min RBI</td>
-                <td>90 minutes Z2</td>
-                <td>90 minutes Z2</td>
-                <td>150 minutes with 2x20min Threshold 12min RBI</td>
-            </tr>
-        </table>
+            <table bgcolor="black" width="700">
+                <tr bgcolor="grey">
+                    <th width="100">Sunday</th>
+                    <th width="100">Monday</th>
+                    <th width="100">Tuesday</th>
+                    <th width="100">Wednesday</th>
+                    <th width="100">Thursday</th>
+                    <th width="100">Friday</th>
+                    <th width="100">Saturday</th>
+                </tr>
+                <tr bgcolor="green" align="center">
+                    <td>180 mintues Z2</td>
+                    <td>Rest day</td>
+                    <td>90 minutes Z2</td>
+                    <td>90 minutes with 4x5min Vo2 Max 6min RBI</td>
+                    <td>90 minutes Z2</td>
+                    <td>90 minutes Z2</td>
+                    <td>150 minutes with 2x20min Threshold 12min RBI</td>
+                </tr>
+            </table>
+        </div>
         <br>
     </main>
 
